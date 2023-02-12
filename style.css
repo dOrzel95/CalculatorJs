@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.print-window{
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 1rem solid black;
+    height: 30vh;
+    padding: 0 1rem;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.calculator-keyboard{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1rem solid black;
+}
+.keyboard-button{
+    border: .2rem solid black;
+    flex-basis: 25%;
+    height:14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@media screen and (min-width:250px) {
+    .wrapper{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width:350px) {
+    .wrapper{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .wrapper{
+     font-size: 5rem;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .wrapper{
+     font-size: 3rem;
+    }
+ 
+    .print-window{
+     border-top: .5rem solid black;
+     border-left: .5rem solid black;
+     border-right: .5rem solid black;
+     border-bottom: .2rem solid black;
+     flex-grow: 1;
+ }
+ 
+     .calculator-keyboard{
+         border: .1rem solid black;
+     }
+     .keyboard-button{
+         border: .2rem solid black;
+     }
+ }
+
+@media screen and (min-width:665px) {
+   .wrapper{
+    font-size: 3rem;
+   }
+
+   .print-window{
+    border: .8rem solid black;
+}
+
+    .calculator-keyboard{
+        border: .6rem solid black;
+    }
+    .keyboard-button{
+        border: .2rem solid black;
+    }
+}
+@media screen and (min-width:760px) and (orientation:portrait) {
+    .wrapper{
+     font-size: 6rem;
+    }
+    .print-window{
+        font-size: 8rem;
+        border: 1rem solid black;
+    }
+    
+    .calculator-keyboard{
+        border: .9rem solid black;
+    }
+    .keyboard-button{
+        border: .4rem solid black;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .wrapper{
+     font-size: 3rem;
+    }
+ 
+    .print-window{
+     border: .5rem solid black;
+ }
+ 
+     .calculator-keyboard{
+         border: .3rem solid black;
+     }
+     .keyboard-button{
+         border: .2rem solid black;
+     }
+ }
+
+
+@media screen and (min-width:800px) and (orientation:portrait) {
+    .wrapper{
+     font-size: 8rem;
+    }
+
+    .print-window{
+        font-size: 10rem;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .wrapper{
+     font-size: 5rem;
+    }
+ }
+
+ @media screen and (min-width:1180px) {
+    .wrapper{
+     font-size: 7rem;
+    }
+ 
+    .print-window{
+     border: 1rem solid black;
+ }
+ 
+     .calculator-keyboard{
+         border: .8rem solid black;
+     }
+     .keyboard-button{
+         border: .4rem solid black;
+     }
+ }
